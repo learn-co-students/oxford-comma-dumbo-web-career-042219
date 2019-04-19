@@ -14,6 +14,6 @@ def oxford_comma(array)
 
 # correctly formats arrays of lengths greater than three
 	  else
-	    return array[-1].join(", ") + ", and #{array.last}"
+	    return array[0, array.length-1].join(", ") + ", and #{array.last}"
 	end
 end
